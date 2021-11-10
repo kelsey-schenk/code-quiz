@@ -1,6 +1,8 @@
 .home-page {
     text-align: center;
+    padding: 70px, 0px;
     font-family: 'Times New Roman', Times, serif;
+    display: block;
 }
 
 .home-page h1 {
