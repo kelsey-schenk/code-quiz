@@ -14,3 +14,7 @@
     background-color: violet;
     border-radius: 12px;
 }
+
+.hide {
+    display: none;
+}
