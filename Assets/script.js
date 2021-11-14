@@ -15,44 +15,7 @@ const submitButton = document.getElementById('Start Quiz');
 
 // TO DO : Create questions array
 // Use set interval to create countdown timer
-const quizQuesitons = [
-    {
-        question:"What does HTML stand for?",
-        answers : {
-            a: "",
-            b: "",
-            c: "",
-        },
-        correctAnswer: "c" 
-    },
-    {
-        question:"How do you check your current development branch for Git?",
-        answers: {
-            a: "git branch",
-            b: "git checkout",
-            c: "git status",
-        },
-        correctAnswer: "a"
-    },
-    {
-        question:"Which of these are position values",
-        answers: {
-            a: "left and right",
-            b: "fixed and flexible",
-            c: "relative and absolute",
-        },
-        correctAnswer: "c",
-    },
-    {
-        question: "make it stop",
-        answers: {
-            a: "no",
-            b: "nox2",
-            c: "nox3",
-        },
-        correctAnswer: "c",
-    },
-];
+
 
 function quizTimer() {
     var sec = 60;
@@ -67,12 +30,13 @@ function quizTimer() {
     }, 1000);
 }
 
+function questionOne(){
+    nextQuestion(document.getElementById("question1"), document.getElementById("question2"));
+}
 
-function createQuiz(); {
-    const output = [];
-    myQuestions.forEach(
-        (currentQuestion, questionNumber) => {}
-    )
-    
-
+function nextQuestion(question1,question2) {
+    question1.classList.toggle("hidden");
+    question1.classList.toggle("show");
+    question2.classList.toggle("hidden");
+    question2.classList.toggle("show");
 }

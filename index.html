@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Code Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
 
-<link rel="stylesheet" href="./Assets/styles.css">
+    <link rel="stylesheet" href="./Assets/styles.css">
 </head>
 <header>
     <div id="displayTime"></div>
@@ -24,54 +24,45 @@
         <button onclick="startQuizToggle()" id="Start">Start Quiz</button>
     </div>
     <section id="questions-container" class="questions-container">
-        <div class=question>
-        <h3>Question 1</h3>
+        <div id="question1" class="show">
+            <h3>What does HTML stand for?</h3>
+                <button id="answer-button" onclick="nextQuestion()" >a.Hyper Text Markup Language</buttion>
+                <button id="answer-button">b.Hyperdrive Text Meta Language</button>
+                <button id="answer-button">c.Header Text Markup Log</button>
+                <button id="answer-button">d.Hidden Text Management Log</button>
         </div>
-            <div class="options">
-            <button class="answer-button">a.</buttion>
-            <button class="answer-button">b.</button>
-            <button class="answer-button">c.</button>
-            <button class="answer-button">d.</button>
+        <div id="question2" class="hidden">
+            <h3>Which CSS property is used to change background color?</h3>
+            <button id="answer-button">a.color-in-background</button>
+            <button id="answer-button">b.color</button>
+            <button id="answer-button" onclick="nextQuestion()">c.background-color</button>
+            <button id="answer-button">d.back-color</button>
         </div>
-        <div class="question">
-            <h3>Question 2</h3>
+        <div id="question3" class="hidden">
+            <h3>Which word is used to describe a user's interaction with a webpage?</h3>
+            <button id="answer-button">a.click</button>
+            <button id="answer-button" onclick="nextQuestion()">b.event</button>
+            <button id="answer-button">c.user activity</button>
+            <button id="answer-button">d.user experience</button>
         </div>
-        <div class="options">
-            <button class="answer-button">a.</button>
-            <button class="answer-button">b.</button>
-            <button class="answer-button">c.</button>
-            <button class="answer-button">d.</button>
+        <div class="question4" class="hidden">
+            <h3>What is a callback function?</h3>
+            <button id="answer-button">a.Dynamically creates new HTML</button>
+            <button id="answer-button">b.Executes a callback after a set delay</button>
+            <button id="answer-button">c.Creates a DOM element object</button>
+            <button id="answer-button" onclick="nextQuestion()">d.Passing a funciton into another function</button>
         </div>
-        <div class="question">
-            <h3>Question 3</h3>
-        </div>
-        <div class="options">
-            <button class="answer-button">a.</button>
-            <button class="answer-button">b.</button>
-            <button class="answer-button">c.</button>
-            <button class="answer-button">d.</button>
-        </div>
-        <div class="question">
-            <h3>Question 4</h3>
-        </div>
-        <div class="options">
-            <button class="answer-button">a.</button>
-            <button class="answer-button">b.</button>
-            <button class="answer-button">c.</button>
-            <button class="answer-button">d.</button>
-        <div class="question">
-            <h3>Question 5</h3>
-        </div>
-        <div class="options">
-            <button class="answer-button">a.</button>
-            <button class="answer-button">b.</button>
-            <button class="answer-button">c.</button>
-            <button class="answer-button">d.</button>
+        <div class="question5" class="hidden">
+                <h3>What does the Alert() function do in JavaScript?</h3>
+                <button id="answer-button" onclick="nextQuestion()">a.Tells the browser to display a message to the user</button>
+                <button id="answer-button">b.Tells the browser to shut down</button>
+                <button id="answer-button">c.Console logs an alert message</button>
+                <button id="answer-button">d.It does nothing</button>
         </div>
     </section>
     </div>
 
-<script src="./Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 
 </html>
